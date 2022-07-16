@@ -2,7 +2,7 @@
 
 import math
 import time
-from configs import Config
+import Config
 
 
 async def progress_for_pyrogram(current, total, ud_type, message, start):
