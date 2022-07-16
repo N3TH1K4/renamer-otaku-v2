@@ -23,8 +23,8 @@ I'm Sakura Minamoto😊♥️ A Simple File Rename Bot With Permenant Thumbnail 
 
 __For More Details Check Help__📜
 """
-    HELP_TEXT = """**Follow these Steps For Using Me..**
- 
+HELP_TEXT = """**Follow these Steps For Using Me..**
+
 ➠ Configure the Settings before using me.....
 ➠ Send a photo to set it as your custom thumbnail..... 
 ➠ Send any File or media you want to rename..... 
@@ -39,7 +39,7 @@ __For More Details Check Help__📜
 
 __⭕️Note: Multitasking supported, but only do two tasks at once, or the bot may crash..__
 """
-    ABOUT_TEXT = """
+ABOUT_TEXT = """
 📌 A Telegram Bot Can Help You For Renaming File/Video/Audio With Permenant Thumbnail Support💯 Made By A Weeb.       
 
 📝**Language:** [Python3](https://www.python.org)
@@ -50,7 +50,7 @@ __⭕️Note: Multitasking supported, but only do two tasks at once, or the bot 
 
 👨‍💻**Dev:** [Kousei](https://t.me/Kousei_Assistantbot)
 """
-    PROGRESS = """
+PROGRESS = """
 **📊Progress:** {0}%
 
 **✅Done:** {1} **Of** {2}
