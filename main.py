@@ -103,6 +103,19 @@ async def rename_handler(bot: Client, event: Message):
             text=f"**Current File Name:** `{media.file_name}`\n\nSend me New File Name!\n__⭕️Note: Extension not required.__",
             quote=True
         )
+	lol = media.file_name
+	if "720p" in lol:
+		qua = "[720p]"
+	elif "1080p" in lol:
+		qua = "[1080p]"
+	else:
+		qua = None
+	if "Dual" in lol:
+		mod = "[Dual]"
+	elif "Sub" in lol:
+		mod = "[Sub]"
+	else:
+		mod = None
         download_location = f"{Config.DOWNLOAD_PATH}/{str(event.from_user.id)}/{str(time.time())}/"
         if os.path.exists(download_location):
             os.makedirs(download_location)
@@ -111,7 +124,7 @@ async def rename_handler(bot: Client, event: Message):
             if ask_.text and (ask_.text.startswith("/") is False):
                 ascii_ = ''.join([i if (i in string.digits or i in string.ascii_letters or i == "_", "_") else "" for i in ask_.text.rsplit('_', 1)[0]])
                 prefix_ = await db.get_prefix(event.from_user.id)
-                new_file_name = f"{download_location}{prefix_ if (prefix_ is not None) else ''}{ascii_.replace('.', '.')}.{media.file_name.rsplit('.', 1)[-1]}"
+                new_file_name = f"{download_location}{prefix_ if (prefix_ is not None) else ''}{ascii_.replace('.', '.')}.{media.file_name.rsplit('.', 1)[-1]} {qua} {mod} [ON]"
                 if len(new_file_name) > 255:
                     await reply_.edit("Sorry Unkil,\nFile Name length is more than 255 bytes!")
                     return
