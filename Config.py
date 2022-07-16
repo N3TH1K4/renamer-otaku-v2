@@ -3,21 +3,21 @@
 import os
 
 
-class Config(object):
-    API_ID = int(os.environ.get("API_ID", "18983092"))
-    API_HASH = os.environ.get("API_HASH", "a6005a70e88369b4fb08b8350ebbdd35")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "1977805563:AAFgr7EsLJHqBTo8jOSxbU6bH8AMM8nTzTg")
-    SESSION_NAME = os.environ.get("SESSION_NAME", "Minamotosakura")
-    SLEEP_TIME = int(os.environ.get("SLEEP_TIME", 0))
-    BOT_OWNER = int(os.environ.get("BOT_OWNER", "1930645496"))
-    CAPTION = ""
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001558732171"))
-    MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb+srv://TROJ3N:Nethika123@cluster0.uppg6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-    DOWNLOAD_PATH = os.environ.get("DOWNLOAD_PATH", "./downloads")
-    BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "True"))
-    ONE_PROCESS_ONLY = bool(os.environ.get("ONE_PROCESS_ONLY", False))
-    START_TEXT ="""
+
+API_ID = 18983092
+API_HASH = "a6005a70e88369b4fb08b8350ebbdd35"
+BOT_TOKEN = "1977805563:AAFgr7EsLJHqBTo8jOSxbU6bH8AMM8nTzTg"
+SESSION_NAME ="Minamotosakura"
+SLEEP_TIME =  0
+BOT_OWNER = 1930645496"
+CAPTION = ""
+UPDATES_CHANNEL = None
+LOG_CHANNEL = -1001558732171
+MONGODB_URI = "mongodb+srv://TROJ3N:Nethika123@cluster0.uppg6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+DOWNLOAD_PATH = "./downloads"
+BROADCAST_AS_COPY = True
+ONE_PROCESS_ONLY = False
+START_TEXT ="""
 Hi!! 
 I'm Sakura Minamoto😊♥️ A Simple File Rename Bot With Permenant Thumbnail Support💯.
 
