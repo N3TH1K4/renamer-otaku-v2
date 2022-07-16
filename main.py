@@ -8,7 +8,7 @@ from asyncio import TimeoutError
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
 
-from configs import Config
+import Config
 from helpers.settings import OpenSettings
 from helpers.database.access_db import db
 from helpers.forcesub import ForceSub
