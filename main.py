@@ -19,7 +19,6 @@ from helpers.database.add_user import AddUserToDatabase
 from helpers.display_progress import progress_for_pyrogram
 
 RenameBot = Client(
-    session_name=Config.SESSION_NAME,
     api_id=Config.API_ID,
     api_hash=Config.API_HASH,
     bot_token=Config.BOT_TOKEN
