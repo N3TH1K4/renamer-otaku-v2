@@ -18,7 +18,7 @@ from helpers.uploader import UploadFile, UploadVideo, UploadAudio
 from helpers.database.add_user import AddUserToDatabase
 from helpers.display_progress import progress_for_pyrogram
 
-RenameBot = Client(
+RenameBot = Client("re",
     api_id=Config.API_ID,
     api_hash=Config.API_HASH,
     bot_token=Config.BOT_TOKEN
