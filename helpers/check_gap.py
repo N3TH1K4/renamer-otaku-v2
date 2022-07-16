@@ -1,5 +1,5 @@
 import time
-from configs import Config
+import Config
 
 GAP = {}
 
