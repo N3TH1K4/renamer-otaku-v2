@@ -103,19 +103,19 @@ async def rename_handler(bot: Client, event: Message):
             text=f"**Current File Name:** `{media.file_name}`\n\nSend me New File Name!\n__⭕️Note: Extension not required.__",
             quote=True
         )
-	lol =  media.file_name
-	if "720p" in lol:
-		qua = "[720p]"
+        lol =  media.file_name
+        if "720p" in lol:
+            qua = "[720p]"
 	elif "1080p" in lol:
-		qua = "[1080p]"
-	else:
-		qua = None
-	if "Dual" in lol:
-		mod = "[Dual]"
-	elif "Sub" in lol:
-		mod = "[Sub]"
-	else:
-		mod = None
+            qua = "[1080p]"
+        else:
+            qua = None
+        if "Dual" in lol:
+            mod = "[Dual]"
+        elif "Sub" in lol:
+            mod = "[Sub]"
+        else:
+            mod = None
         download_location = f"{Config.DOWNLOAD_PATH}/{str(event.from_user.id)}/{str(time.time())}/"
         if os.path.exists(download_location):
             os.makedirs(download_location)
