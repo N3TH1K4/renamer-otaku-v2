@@ -5,7 +5,7 @@ import asyncio
 import time
 import random
 from PIL import Image
-from configs import Config
+import Config
 from helpers.clean import delete_one, delete_all
 from helpers.display_progress import progress_for_pyrogram, humanbytes
 from helpers.database.access_db import db
