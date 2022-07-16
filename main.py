@@ -106,7 +106,7 @@ async def rename_handler(bot: Client, event: Message):
         lol =  media.file_name
         if "720p" in lol:
             qua = "[720p]"
-	elif "1080p" in lol:
+        elif "1080p" in lol:
             qua = "[1080p]"
         else:
             qua = None
