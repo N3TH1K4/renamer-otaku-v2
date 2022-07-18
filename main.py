@@ -75,7 +75,7 @@ async def start_handler(bot: Client, event: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-	        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/WaifuHaremBots")],
+	        [InlineKeyboardButton("✨ Anime Channel ✨", url="https://t.me/otaku_network")],
                 [InlineKeyboardButton("🏡 Home", callback_data="home"),
                  InlineKeyboardButton("📜 Help", callback_data="help")],
                 [InlineKeyboardButton("🔐 Close", callback_data="closeMeh")]
@@ -129,7 +129,7 @@ async def rename_handler(bot: Client, event: Message):
                     await reply_.edit("Sorry Unkil,\nFile Name length is more than 255 bytes!")
                     return
                 await ask_.delete(True)
-                await reply_.edit("<code>Please Wait⏳..Download Starting Soon😇..</code>")
+                await reply_.edit("<code>Downloading...</code>")
                 await asyncio.sleep(Config.SLEEP_TIME)
                 c_time = time.time()
                 try:
@@ -150,7 +150,7 @@ async def rename_handler(bot: Client, event: Message):
                             print(f"Something Went Wrong!\nUnable to Find File for {str(event.from_user.id)} !!")
                         return
                     await asyncio.sleep(Config.SLEEP_TIME)
-                    await reply_.edit("<code>Downloaded Successfully✅..Upload Starting Soon😇..</code>")
+                    await reply_.edit("<code>Uploading..</code>")
                     upload_as_doc = await db.get_upload_as_doc(event.from_user.id)
                     if upload_as_doc is True:
                         await UploadFile(
@@ -425,7 +425,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [ 
-			                [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/WaifuHaremBots")],
+			                [InlineKeyboardButton("✨ Anime Channel ✨", url="https://t.me/otaku_network")],
 					[
 						InlineKeyboardButton("📜 Help", callback_data="help"),
 						InlineKeyboardButton("🏠 Hᴏᴍᴇ", callback_data="home")
@@ -441,7 +441,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-			                [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/WaifuHaremBots")],
+			                [InlineKeyboardButton("✨ Anime Channel ✨", url="https://t.me/otaku_network")],
                                         [
 						InlineKeyboardButton("💠 Aʙᴏᴜᴛ", callback_data="about"),
 						InlineKeyboardButton("🏠 Hᴏᴍᴇ", callback_data="home")
@@ -457,7 +457,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                                        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/WaifuHaremBots")],
+                                        [InlineKeyboardButton("✨ Anime Channel ✨", url="https://t.me/otaku_network")],
 			                [
 						InlineKeyboardButton("📜 Help ", callback_data="help"),
 						InlineKeyboardButton("💠 About", callback_data="about")
