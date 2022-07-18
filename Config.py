@@ -6,8 +6,8 @@ import os
 
 API_ID = 18983092
 API_HASH = "a6005a70e88369b4fb08b8350ebbdd35"
-BOT_TOKEN = "1977805563:AAFgr7EsLJHqBTo8jOSxbU6bH8AMM8nTzTg"
-SESSION_NAME ="Minamotosakura"
+BOT_TOKEN = "5401154744:AAFGnahRiWsqrblL837eKWSC_v_vbyaACic"
+SESSION_NAME ="Ichika"
 SLEEP_TIME =  0
 BOT_OWNER = 1930645496
 CAPTION = ""
@@ -19,7 +19,7 @@ BROADCAST_AS_COPY = True
 ONE_PROCESS_ONLY = False
 START_TEXT ="""
 Hi!! 
-I'm Sakura Minamoto😊♥️ A Simple File Rename Bot With Permenant Thumbnail Support💯.
+I'm **Ichika Nakano** A Simple File Rename Bot With Permenant Thumbnail Support💯.
 
 __For More Details Check Help__📜
 """
@@ -40,7 +40,7 @@ HELP_TEXT = """**Follow these Steps For Using Me..**
 __⭕️Note: Multitasking supported, but only do two tasks at once, or the bot may crash..__
 """
 ABOUT_TEXT = """
-📌 A Telegram Bot Can Help You For Renaming File/Video/Audio With Permenant Thumbnail Support💯 Made By A Weeb.       
+📌 A Telegram Bot Can Help You For Renaming File/Video/Audio With Permenant Thumbnail Support💯 Copy Of @SakuraRenamer_bot.       
 
 📝**Language:** [Python3](https://www.python.org)
 
@@ -48,7 +48,7 @@ ABOUT_TEXT = """
 
 📡**Hosted On:** [Heorku](https://heroku.com)
 
-👨‍💻**Dev:** [Kousei](https://t.me/Kousei_Assistantbot)
+👨‍💻**Dev:** [TROJ3N](https://t.me/troj3n)
 """
 PROGRESS = """
 **📊Progress:** {0}%
